@@ -9,10 +9,13 @@
 // (использовать функции из пункта 3) и вернуть полученное значение (использовать switch).
 
 
-function add(float $agr1, float $arg2): float {
+function add(float $agr1, float $arg2): float
+{
     return $agr1 + $arg2;
 }
-function sub(float $agr1, float $arg2): float {
+
+function sub(float $agr1, float $arg2): float
+{
     return $agr1 - $arg2;
 }
 
@@ -20,6 +23,7 @@ function multi(float $agr1, float $arg2): float
 {
     return $agr1 * $arg2;
 }
+
 function div(float $arg1, float $arg2): float|string
 {
     if ($arg2 === 0.0) {
@@ -35,6 +39,7 @@ function mathOperation($arg1, $arg2, $operation): float|string
         "-" => sub($arg1, $arg2),
         "*" => multi($arg1, $arg2),
         "/" => div($arg1, $arg2),
+        default => "Ошибка! Не поддерживаемая операция!",
     };
 }
 

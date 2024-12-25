@@ -39,7 +39,7 @@ function getTranslit(string $value, array $alfabet): string
             $resultChar = $currentChar;
         }
         if($upperChar){
-            $result .= mb_strtoupper($resultChar);
+            $result .= ucfirst($resultChar);
         } else {
             $result .= $resultChar;
         }
