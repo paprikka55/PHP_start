@@ -1,0 +1,16 @@
+{
+    "name": "test/composer",
+    "description": "test composer",
+    "autoload": {
+        "psr-4": {
+            "Test\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Malyatin",
+            "email": "paprikka84@gmail.com"
+        }
+    ],
+    "require": {}
+}

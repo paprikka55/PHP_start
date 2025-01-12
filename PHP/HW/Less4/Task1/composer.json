@@ -1,0 +1,15 @@
+{
+    "name": "admin/task1",
+    "autoload": {
+        "psr-4": {
+            "Less4\\Task1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Malyatin",
+            "email": "paprikka84@gmail.com"
+        }
+    ],
+    "require": {}
+}
