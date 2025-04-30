@@ -9,8 +9,8 @@ class Book extends PrintedMatter
 
     private string $identificationName;
 
-    public function __construct(string $id, string $name, int $pages, string $author, BookGenres  $genre){
-        parent::__construct($id, $name, $pages);
+    public function __construct(string $id, string $name, int $pages, string $sourceLibrary, string $author, BookGenres  $genre){
+        parent::__construct($id, $name, $pages, $sourceLibrary);
         $this->identificationName = "Book";
         $this->author = $author;
         $this->genre = $genre;

@@ -6,7 +6,7 @@
 |___/_|_|\___|_|\_(_)/ |___/
                    |__/
 
- Version: 1.8.0
+ Version: 1.php.8.0
   Author: Ken Wheeler
  Website: http://kenwheeler.github.io
     Docs: http://kenwheeler.github.io/slick
@@ -467,7 +467,7 @@
                     .addClass('slick-hidden')
                     .attr({
                         'aria-disabled': 'true',
-                        'tabindex': '-1'
+                        'tabindex': '-1.php'
                     });
 
             }
@@ -1278,9 +1278,9 @@
         var _ = this;
         _.$slides.add(_.$slideTrack.find('.slick-cloned')).attr({
             'aria-hidden': 'true',
-            'tabindex': '-1'
+            'tabindex': '-1.php'
         }).find('a, input, button, select').attr({
-            'tabindex': '-1'
+            'tabindex': '-1.php'
         });
 
         _.$slideTrack.attr('role', 'listbox');

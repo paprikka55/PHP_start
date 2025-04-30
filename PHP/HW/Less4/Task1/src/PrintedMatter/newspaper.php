@@ -8,8 +8,8 @@ class Newspaper extends Magazine
 {
     private NewspaperColor $newspaperColor;
     private string $identificationName;
-    public function __construct(string $id, string $name, int $pages, DateTime $releaseDate, int $releaseNumber, NewspaperColor $newspaperColor){
-        parent::__construct($id, $name, $pages, $releaseDate, $releaseNumber);
+    public function __construct(string $id, string $name, int $pages, string $sourceLibrary, DateTime $releaseDate, int $releaseNumber, NewspaperColor $newspaperColor){
+        parent::__construct($id, $name, $pages, $sourceLibrary, $releaseDate, $releaseNumber);
         $this->newspaperColor = $newspaperColor;
         $this->identificationName = "Newspaper";
     }

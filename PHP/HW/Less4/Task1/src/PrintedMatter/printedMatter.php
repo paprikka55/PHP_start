@@ -8,18 +8,19 @@ abstract class PrintedMatter implements IPrintedMatterIdented
     private bool $isBusy;
     private string $name;
     private int $pages;
-
+    private string $source;
 
     /**
      * @param string $id
      * @param string $name
      */
-    public function __construct(string $id, string $name, int $pages)
+    public function __construct(string $id, string $name, int $pages, string $source)
     {
         $this->id = $id;
         $this->name = $name;
         $this->pages = $pages;
         $this->isBusy = false;
+        $this->source = $source;
     }
 
     public function getName(): string
@@ -37,7 +38,7 @@ abstract class PrintedMatter implements IPrintedMatterIdented
         return $this->id;
     }
 
-    public function setIsBusy(bool $isBusy): void
+    private function setIsBusy(bool $isBusy): void
     {
         $this->isBusy = $isBusy;
     }
@@ -52,4 +53,9 @@ abstract class PrintedMatter implements IPrintedMatterIdented
         return $this->pages;
     }
 
+    public function getOnHands(): string
+    {
+        $this->setIsBusy(true);
+        return $this->source;
+    }
 }

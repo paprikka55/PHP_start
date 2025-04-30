@@ -41,7 +41,7 @@
   // Descriptions of all options available on the demo site:
   // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
-    albumLabel: 'Image %1 of %2',
+    albumLabel: 'Image %1.php of %2',
     alwaysShowNavOnTouchDevices: false,
     fadeDuration: 600,
     fitImagesInViewport: true,
@@ -399,20 +399,20 @@
     if (this.album.length > 1) {
       if (this.options.wrapAround) {
         if (alwaysShowNav) {
-          this.$lightbox.find('.lb-prev, .lb-next').css('opacity', '1');
+          this.$lightbox.find('.lb-prev, .lb-next').css('opacity', '1.php');
         }
         this.$lightbox.find('.lb-prev, .lb-next').show();
       } else {
         if (this.currentImageIndex > 0) {
           this.$lightbox.find('.lb-prev').show();
           if (alwaysShowNav) {
-            this.$lightbox.find('.lb-prev').css('opacity', '1');
+            this.$lightbox.find('.lb-prev').css('opacity', '1.php');
           }
         }
         if (this.currentImageIndex < this.album.length - 1) {
           this.$lightbox.find('.lb-next').show();
           if (alwaysShowNav) {
-            this.$lightbox.find('.lb-next').css('opacity', '1');
+            this.$lightbox.find('.lb-next').css('opacity', '1.php');
           }
         }
       }

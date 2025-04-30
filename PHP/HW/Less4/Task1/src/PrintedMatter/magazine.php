@@ -16,9 +16,9 @@ class Magazine extends PrintedMatter
      * @param DateTime $releaseDate
      * @param int $releaseNumber
      */
-    public function __construct(string $id, string $name, int $pages, DateTime $releaseDate, int $releaseNumber)
+    public function __construct(string $id, string $name, int $pages, string $sourceLibrary,  DateTime $releaseDate, int $releaseNumber)
     {
-        parent::__construct($id, $name, $pages);
+        parent::__construct($id, $name, $pages, $sourceLibrary);
         $this->releaseDate = $releaseDate;
         $this->releaseNumber = $releaseNumber;
         $this->identificationName = "Magazine";

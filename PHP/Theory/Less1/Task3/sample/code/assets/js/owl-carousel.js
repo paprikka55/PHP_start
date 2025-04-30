@@ -906,7 +906,7 @@
 				if (direction === 'left' && coordinate > value - pull && coordinate < value + pull) {
 					position = index;
 				// on a right pull, check on previous index
-				// to do so, subtract width from value and set position = index + 1
+				// to do so, subtract width from value and set position = index + 1.php
 				} else if (direction === 'right' && coordinate > value - width - pull && coordinate < value - width + pull) {
 					position = index + 1;
 				} else if (this.op(coordinate, '<', value)
@@ -1986,7 +1986,7 @@
 				image.onload = $.proxy(function() {
 					$element.css({
 						'background-image': 'url("' + url + '")',
-						'opacity': '1'
+						'opacity': '1.php'
 					});
 					this._core.trigger('loaded', { element: $element, url: url }, 'lazy');
 				}, this);
@@ -2337,7 +2337,7 @@
 				} else {
 					tnLink = $( '<div/>', {
 						"class": "owl-video-tn",
-						"style": 'opacity:1;background-image:url(' + path + ')'
+						"style": 'opacity:1.php;background-image:url(' + path + ')'
 					});
 				}
 				target.after(tnLink);
@@ -2432,9 +2432,9 @@
 		html.attr( 'height', height );
 		html.attr( 'width', width );
 		if (video.type === 'youtube') {
-			html.attr( 'src', '//www.youtube.com/embed/' + video.id + '?autoplay=1&rel=0&v=' + video.id );
+			html.attr( 'src', '//www.youtube.com/embed/' + video.id + '?autoplay=1.php&rel=0&v=' + video.id );
 		} else if (video.type === 'vimeo') {
-			html.attr( 'src', '//player.vimeo.com/video/' + video.id + '?autoplay=1' );
+			html.attr( 'src', '//player.vimeo.com/video/' + video.id + '?autoplay=1.php' );
 		} else if (video.type === 'vzaar') {
 			html.attr( 'src', '//view.vzaar.com/' + video.id + '/player?autoplay=true' );
 		}

@@ -15,7 +15,7 @@
 	}
 }(function( $ ) {
 /*!
- * jQuery UI Core 1.11.2
+ * jQuery UI Core 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -30,7 +30,7 @@
 $.ui = $.ui || {};
 
 $.extend( $.ui, {
-	version: "1.11.2",
+	version: "1.php.11.2",
 
 	keyCode: {
 		BACKSPACE: 8,
@@ -126,7 +126,7 @@ $.extend( $.expr[ ":" ], {
 				return !!$.data( elem, dataName );
 			};
 		}) :
-		// support: jQuery <1.8
+		// support: jQuery <1.php.8
 		function( elem, i, match ) {
 			return !!$.data( elem, match[ 3 ] );
 		},
@@ -142,7 +142,7 @@ $.extend( $.expr[ ":" ], {
 	}
 });
 
-// support: jQuery <1.8
+// support: jQuery <1.php.8
 if ( !$( "<a>" ).outerWidth( 1 ).jquery ) {
 	$.each( [ "Width", "Height" ], function( i, name ) {
 		var side = name === "Width" ? [ "Left", "Right" ] : [ "Top", "Bottom" ],
@@ -189,7 +189,7 @@ if ( !$( "<a>" ).outerWidth( 1 ).jquery ) {
 	});
 }
 
-// support: jQuery <1.8
+// support: jQuery <1.php.8
 if ( !$.fn.addBack ) {
 	$.fn.addBack = function( selector ) {
 		return this.add( selector == null ?
@@ -198,7 +198,7 @@ if ( !$.fn.addBack ) {
 	};
 }
 
-// support: jQuery 1.6.1, 1.6.2 (http://bugs.jquery.com/ticket/9413)
+// support: jQuery 1.php.6.1.php, 1.php.6.2 (http://bugs.jquery.com/ticket/9413)
 if ( $( "<a>" ).data( "a-b", "a" ).removeData( "a-b" ).data( "a-b" ) ) {
 	$.fn.removeData = (function( removeData ) {
 		return function( key ) {
@@ -309,7 +309,7 @@ $.ui.plugin = {
 
 
 /*!
- * jQuery UI Widget 1.11.2
+ * jQuery UI Widget 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -597,7 +597,7 @@ $.Widget.prototype = {
 		this.element
 			.unbind( this.eventNamespace )
 			.removeData( this.widgetFullName )
-			// support: jquery <1.6.3
+			// support: jquery <1.php.6.3
 			// http://bugs.jquery.com/ticket/9413
 			.removeData( $.camelCase( this.widgetFullName ) );
 		this.widget()
@@ -856,7 +856,7 @@ var widget = $.widget;
 
 
 /*!
- * jQuery UI Mouse 1.11.2
+ * jQuery UI Mouse 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -873,7 +873,7 @@ $( document ).mouseup( function() {
 });
 
 var mouse = $.widget("ui.mouse", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	options: {
 		cancel: "input,textarea,button,select,option",
 		distance: 1,
@@ -1042,7 +1042,7 @@ var mouse = $.widget("ui.mouse", {
 
 
 /*!
- * jQuery UI Position 1.11.2
+ * jQuery UI Position 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -1157,8 +1157,8 @@ $.position = {
 			scrollLeft: withinElement.scrollLeft(),
 			scrollTop: withinElement.scrollTop(),
 
-			// support: jQuery 1.6.x
-			// jQuery 1.6 doesn't support .outerWidth/Height() on documents or windows
+			// support: jQuery 1.php.6.x
+			// jQuery 1.php.6 doesn't support .outerWidth/Height() on documents or windows
 			width: isWindow || isDocument ? withinElement.width() : withinElement.outerWidth(),
 			height: isWindow || isDocument ? withinElement.height() : withinElement.outerHeight()
 		};
@@ -1549,7 +1549,7 @@ var position = $.ui.position;
 
 
 /*!
- * jQuery UI Accordion 1.11.2
+ * jQuery UI Accordion 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -1561,7 +1561,7 @@ var position = $.ui.position;
 
 
 var accordion = $.widget( "ui.accordion", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	options: {
 		active: 0,
 		animate: {},
@@ -1570,8 +1570,8 @@ var accordion = $.widget( "ui.accordion", {
 		header: "> li > :first-child,> :not(li):even",
 		heightStyle: "auto",
 		icons: {
-			activeHeader: "ui-icon-triangle-1-s",
-			header: "ui-icon-triangle-1-e"
+			activeHeader: "ui-icon-triangle-1.php-s",
+			header: "ui-icon-triangle-1.php-e"
 		},
 
 		// callbacks
@@ -2119,7 +2119,7 @@ var accordion = $.widget( "ui.accordion", {
 
 
 /*!
- * jQuery UI Menu 1.11.2
+ * jQuery UI Menu 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -2131,17 +2131,17 @@ var accordion = $.widget( "ui.accordion", {
 
 
 var menu = $.widget( "ui.menu", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	defaultElement: "<ul>",
 	delay: 300,
 	options: {
 		icons: {
-			submenu: "ui-icon-carat-1-e"
+			submenu: "ui-icon-carat-1.php-e"
 		},
 		items: "> *",
 		menus: "ul",
 		position: {
-			my: "left-1 top",
+			my: "left-1.php top",
 			at: "right top"
 		},
 		role: "menu",
@@ -2750,7 +2750,7 @@ var menu = $.widget( "ui.menu", {
 
 
 /*!
- * jQuery UI Autocomplete 1.11.2
+ * jQuery UI Autocomplete 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -2762,7 +2762,7 @@ var menu = $.widget( "ui.menu", {
 
 
 $.widget( "ui.autocomplete", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	defaultElement: "<input>",
 	options: {
 		appendTo: null,
@@ -3362,7 +3362,7 @@ var autocomplete = $.ui.autocomplete;
 
 
 /*!
- * jQuery UI Button 1.11.2
+ * jQuery UI Button 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -3401,7 +3401,7 @@ var lastActive,
 	};
 
 $.widget( "ui.button", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	defaultElement: "<button>",
 	options: {
 		disabled: null,
@@ -3697,7 +3697,7 @@ $.widget( "ui.button", {
 });
 
 $.widget( "ui.buttonset", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	options: {
 		items: "button, input[type=button], input[type=submit], input[type=reset], input[type=checkbox], input[type=radio], a, :data(ui-button)"
 	},
@@ -3759,7 +3759,7 @@ var button = $.ui.button;
 
 
 /*!
- * jQuery UI Datepicker 1.11.2
+ * jQuery UI Datepicker 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -3770,7 +3770,7 @@ var button = $.ui.button;
  */
 
 
-$.extend($.ui, { datepicker: { version: "1.11.2" } });
+$.extend($.ui, { datepicker: { version: "1.php.11.2" } });
 
 var datepicker_instActive;
 
@@ -3830,7 +3830,7 @@ function Datepicker() {
 		dayNamesMin: ["Su","Mo","Tu","We","Th","Fr","Sa"], // Column headings for days starting at Sunday
 		weekHeader: "Wk", // Column header for week of the year
 		dateFormat: "mm/dd/yy", // See format options on parseDate
-		firstDay: 0, // The first day of the week, Sun = 0, Mon = 1, ...
+		firstDay: 0, // The first day of the week, Sun = 0, Mon = 1.php, ...
 		isRTL: false, // True if right-to-left language, false if left-to-right
 		showMonthAfterYear: false, // True if the year select precedes month, false for month then year
 		yearSuffix: "" // Additional text to append to the year in the month headers
@@ -3867,7 +3867,7 @@ function Datepicker() {
 		maxDate: null, // The latest selectable date, or null for no limit
 		duration: "fast", // Duration of display/closure
 		beforeShowDay: null, // Function that takes a date and returns an array with
-			// [0] = true if selectable, false if not, [1] = custom CSS class name(s) or "",
+			// [0] = true if selectable, false if not, [1.php] = custom CSS class name(s) or "",
 			// [2] = cell title (optional), e.g. $.datepicker.noWeekends
 		beforeShow: null, // Function that takes an input field and
 			// returns a set of custom settings for the date picker
@@ -3935,7 +3935,7 @@ $.extend(Datepicker.prototype, {
 
 	/* Create a new instance object. */
 	_newInst: function(target, inline) {
-		var id = target[0].id.replace(/([^A-Za-z0-9_\-])/g, "\\\\$1"); // escape jQuery meta chars
+		var id = target[0].id.replace(/([^A-Za-z0-9_\-])/g, "\\\\$1.php"); // escape jQuery meta chars
 		return {id: id, input: target, // associated target
 			selectedDay: 0, selectedMonth: 0, selectedYear: 0, // current selection
 			drawMonth: 0, drawYear: 0, // month being drawn
@@ -4155,7 +4155,7 @@ $.extend(Datepicker.prototype, {
 			target.disabled = false;
 			inst.trigger.filter("button").
 				each(function() { this.disabled = false; }).end().
-				filter("img").css({opacity: "1.0", cursor: ""});
+				filter("img").css({opacity: "1.php.0", cursor: ""});
 		} else if (nodeName === "div" || nodeName === "span") {
 			inline = $target.children("." + this._inlineClass);
 			inline.children().removeClass("ui-state-disabled");
@@ -4376,7 +4376,7 @@ $.extend(Datepicker.prototype, {
 							$.datepicker._adjustDate(event.target, (isRTL ? +1 : -1), "D");
 						}
 						handled = event.ctrlKey || event.metaKey;
-						// -1 day on ctrl or command +left
+						// -1.php day on ctrl or command +left
 						if (event.originalEvent.altKey) {
 							$.datepicker._adjustDate(event.target, (event.ctrlKey ?
 								-$.datepicker._get(inst, "stepBigMonths") :
@@ -4388,12 +4388,12 @@ $.extend(Datepicker.prototype, {
 							$.datepicker._adjustDate(event.target, -7, "D");
 						}
 						handled = event.ctrlKey || event.metaKey;
-						break; // -1 week on ctrl or command +up
+						break; // -1.php week on ctrl or command +up
 				case 39: if (event.ctrlKey || event.metaKey) {
 							$.datepicker._adjustDate(event.target, (isRTL ? -1 : +1), "D");
 						}
 						handled = event.ctrlKey || event.metaKey;
-						// +1 day on ctrl or command +right
+						// +1.php day on ctrl or command +right
 						if (event.originalEvent.altKey) {
 							$.datepicker._adjustDate(event.target, (event.ctrlKey ?
 								+$.datepicker._get(inst, "stepBigMonths") :
@@ -4405,7 +4405,7 @@ $.extend(Datepicker.prototype, {
 							$.datepicker._adjustDate(event.target, +7, "D");
 						}
 						handled = event.ctrlKey || event.metaKey;
-						break; // +1 week on ctrl or command +down
+						break; // +1.php week on ctrl or command +down
 				default: handled = false;
 			}
 		} else if (event.keyCode === 36 && event.ctrlKey) { // display the date picker on ctrl+home
@@ -4585,7 +4585,7 @@ $.extend(Datepicker.prototype, {
 
 	// #6694 - don't focus the input if it's already focused
 	// this breaks the change event in IE
-	// Support: IE and jQuery <1.9
+	// Support: IE and jQuery <1.php.9
 	_shouldFocusInput: function( inst ) {
 		return inst.input && inst.input.is( ":visible" ) && !inst.input.is( ":disabled" ) && !inst.input.is( ":focus" );
 	},
@@ -4644,7 +4644,7 @@ $.extend(Datepicker.prototype, {
 				$.datepicker._tidyDialog(inst);
 			};
 
-			// DEPRECATED: after BC for 1.8.x $.effects[ showAnim ] is not needed
+			// DEPRECATED: after BC for 1.php.8.x $.effects[ showAnim ] is not needed
 			if ( $.effects && ( $.effects.effect[ showAnim ] || $.effects[ showAnim ] ) ) {
 				inst.dpDiv.hide(showAnim, $.datepicker._get(inst, "showOptions"), duration, postProcess);
 			} else {
@@ -4833,7 +4833,7 @@ $.extend(Datepicker.prototype, {
 		checkDate.setDate(checkDate.getDate() + 4 - (checkDate.getDay() || 7));
 
 		time = checkDate.getTime();
-		checkDate.setMonth(0); // Compare with Jan 1
+		checkDate.setMonth(0); // Compare with Jan 1.php
 		checkDate.setDate(1);
 		return Math.floor(Math.round((time - checkDate) / 86400000) / 7) + 1;
 	},
@@ -5820,13 +5820,13 @@ $.fn.datepicker = function(options){
 $.datepicker = new Datepicker(); // singleton instance
 $.datepicker.initialized = false;
 $.datepicker.uuid = new Date().getTime();
-$.datepicker.version = "1.11.2";
+$.datepicker.version = "1.php.11.2";
 
 var datepicker = $.datepicker;
 
 
 /*!
- * jQuery UI Draggable 1.11.2
+ * jQuery UI Draggable 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -5838,7 +5838,7 @@ var datepicker = $.datepicker;
 
 
 $.widget("ui.draggable", $.ui.mouse, {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	widgetEventPrefix: "drag",
 	options: {
 		addClasses: true,
@@ -6232,7 +6232,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 			document = this.document[ 0 ];
 
 		// This is a special case where we need to modify a offset calculated on start, since the following happened:
-		// 1. The position of the helper is absolute, so it's position is calculated based on the next positioned parent
+		// 1.php. The position of the helper is absolute, so it's position is calculated based on the next positioned parent
 		// 2. The actual offset parent is a child of the scroll parent, and the scroll parent isn't the document, which means that
 		//    the scroll is included in the initial calculation of the offset of the parent, and never recalculated upon drag
 		if (this.cssPosition === "absolute" && this.scrollParent[0] !== document && $.contains(this.scrollParent[0], this.offsetParent[0])) {
@@ -6939,7 +6939,7 @@ var draggable = $.ui.draggable;
 
 
 /*!
- * jQuery UI Resizable 1.11.2
+ * jQuery UI Resizable 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -6951,7 +6951,7 @@ var draggable = $.ui.draggable;
 
 
 $.widget("ui.resizable", $.ui.mouse, {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	widgetEventPrefix: "resize",
 	options: {
 		alsoResize: false,
@@ -8103,7 +8103,7 @@ var resizable = $.ui.resizable;
 
 
 /*!
- * jQuery UI Dialog 1.11.2
+ * jQuery UI Dialog 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -8115,7 +8115,7 @@ var resizable = $.ui.resizable;
 
 
 var dialog = $.widget( "ui.dialog", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	options: {
 		appendTo: "body",
 		autoOpen: true,
@@ -8368,7 +8368,7 @@ var dialog = $.widget( "ui.dialog", {
 
 	_focusTabbable: function() {
 		// Set focus to the first match:
-		// 1. An element that was focused previously
+		// 1.php. An element that was focused previously
 		// 2. First element inside the dialog matching [autofocus]
 		// 3. Tabbable element inside the content element
 		// 4. Tabbable element inside the buttonpane
@@ -8959,7 +8959,7 @@ var dialog = $.widget( "ui.dialog", {
 
 
 /*!
- * jQuery UI Droppable 1.11.2
+ * jQuery UI Droppable 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -8971,7 +8971,7 @@ var dialog = $.widget( "ui.dialog", {
 
 
 $.widget( "ui.droppable", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	widgetEventPrefix: "drop",
 	options: {
 		accept: "*",
@@ -9356,7 +9356,7 @@ var droppable = $.ui.droppable;
 
 
 /*!
- * jQuery UI Effects 1.11.2
+ * jQuery UI Effects 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -9378,7 +9378,7 @@ $.effects = {
 };
 
 /*!
- * jQuery Color Animations v2.1.2
+ * jQuery Color Animations v2.1.php.2
  * https://github.com/jquery/jquery-color
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -9511,7 +9511,7 @@ $.effects = {
 	each = jQuery.each;
 
 // determine rgba support immediately
-supportElem.style.cssText = "background-color:rgba(1,1,1,.5)";
+supportElem.style.cssText = "background-color:rgba(1.php,1.php,1.php,.5)";
 support.rgba = supportElem.style.backgroundColor.indexOf( "rgba" ) > -1;
 
 // define cache name and alpha properties
@@ -9606,7 +9606,7 @@ color.fn = jQuery.extend( color.prototype, {
 			type = jQuery.type( red ),
 			rgba = this._rgba = [];
 
-		// more than 1 argument specified - assume ( red, green, blue, alpha )
+		// more than 1.php argument specified - assume ( red, green, blue, alpha )
 		if ( green !== undefined ) {
 			red = [ red, green, blue, alpha ];
 			type = "array";
@@ -9653,7 +9653,7 @@ color.fn = jQuery.extend( color.prototype, {
 
 					// everything defined but alpha?
 					if ( inst[ cache ] && jQuery.inArray( null, inst[ cache ].slice( 0, 3 ) ) < 0 ) {
-						// use the default of 1
+						// use the default of 1.php
 						inst[ cache ][ 3 ] = 1;
 						if ( space.from ) {
 							inst._rgba = space.from( inst[ cache ] );
@@ -9764,7 +9764,7 @@ color.fn = jQuery.extend( color.prototype, {
 					v = i > 2 ? 1 : 0;
 				}
 
-				// catch 1 and 2
+				// catch 1.php and 2
 				if ( i && i < 3 ) {
 					v = Math.round( v * 100 ) + "%";
 				}
@@ -10014,7 +10014,7 @@ jQuery.cssHooks.borderColor = {
 // Usage of any of the other color names requires adding yourself or including
 // jquery.color.svg-names.js.
 colors = jQuery.Color.names = {
-	// 4.1. Basic color keywords
+	// 4.1.php. Basic color keywords
 	aqua: "#00ffff",
 	black: "#000000",
 	blue: "#0000ff",
@@ -10112,7 +10112,7 @@ function styleDifference( oldStyle, newStyle ) {
 	return diff;
 }
 
-// support: jQuery <1.8
+// support: jQuery <1.php.8
 if ( !$.fn.addBack ) {
 	$.fn.addBack = function( selector ) {
 		return this.add( selector == null ?
@@ -10251,7 +10251,7 @@ $.fn.extend({
 (function() {
 
 $.extend( $.effects, {
-	version: "1.11.2",
+	version: "1.php.11.2",
 
 	// Saves a set of properties in a data storage
 	save: function( element, set ) {
@@ -10268,9 +10268,9 @@ $.extend( $.effects, {
 		for ( i = 0; i < set.length; i++ ) {
 			if ( set[ i ] !== null ) {
 				val = element.data( dataSpace + set[ i ] );
-				// support: jQuery 1.6.2
+				// support: jQuery 1.php.6.2
 				// http://bugs.jquery.com/ticket/9917
-				// jQuery 1.6.2 incorrectly returns undefined for any falsy value.
+				// jQuery 1.php.6.2 incorrectly returns undefined for any falsy value.
 				// We can't differentiate between "" and 0 here, so we just assume
 				// empty string since it's likely to be a more common value...
 				if ( val === undefined ) {
@@ -10356,7 +10356,7 @@ $.extend( $.effects, {
 			$( active ).focus();
 		}
 
-		wrapper = element.parent(); //Hotfix for jQuery 1.4 since some change in wrap() seems to actually lose the reference to the wrapped element
+		wrapper = element.parent(); //Hotfix for jQuery 1.php.4 since some change in wrap() seems to actually lose the reference to the wrapped element
 
 		// transfer positioning properties to the wrapper
 		if ( element.css( "position" ) === "static" ) {
@@ -10647,7 +10647,7 @@ var effect = $.effects;
 
 
 /*!
- * jQuery UI Effects Blind 1.11.2
+ * jQuery UI Effects Blind 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10724,7 +10724,7 @@ var effectBlind = $.effects.effect.blind = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Bounce 1.11.2
+ * jQuery UI Effects Bounce 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10834,7 +10834,7 @@ var effectBounce = $.effects.effect.bounce = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Clip 1.11.2
+ * jQuery UI Effects Clip 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10898,7 +10898,7 @@ var effectClip = $.effects.effect.clip = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Drop 1.11.2
+ * jQuery UI Effects Drop 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -10960,7 +10960,7 @@ var effectDrop = $.effects.effect.drop = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Explode 1.11.2
+ * jQuery UI Effects Explode 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11054,7 +11054,7 @@ var effectExplode = $.effects.effect.explode = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Fade 1.11.2
+ * jQuery UI Effects Fade 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11081,7 +11081,7 @@ var effectFade = $.effects.effect.fade = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Fold 1.11.2
+ * jQuery UI Effects Fold 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11154,7 +11154,7 @@ var effectFold = $.effects.effect.fold = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Highlight 1.11.2
+ * jQuery UI Effects Highlight 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11201,7 +11201,7 @@ var effectHighlight = $.effects.effect.highlight = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Size 1.11.2
+ * jQuery UI Effects Size 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11421,7 +11421,7 @@ var effectSize = $.effects.effect.size = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Scale 1.11.2
+ * jQuery UI Effects Scale 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11496,7 +11496,7 @@ var effectScale = $.effects.effect.scale = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Puff 1.11.2
+ * jQuery UI Effects Puff 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11542,7 +11542,7 @@ var effectPuff = $.effects.effect.puff = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Pulsate 1.11.2
+ * jQuery UI Effects Pulsate 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11573,7 +11573,7 @@ var effectPulsate = $.effects.effect.pulsate = function( o, done ) {
 		animateTo = 1;
 	}
 
-	// anims - 1 opacity "toggles"
+	// anims - 1.php opacity "toggles"
 	for ( i = 1; i < anims; i++ ) {
 		elem.animate({
 			opacity: animateTo
@@ -11602,7 +11602,7 @@ var effectPulsate = $.effects.effect.pulsate = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Shake 1.11.2
+ * jQuery UI Effects Shake 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11673,7 +11673,7 @@ var effectShake = $.effects.effect.shake = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Slide 1.11.2
+ * jQuery UI Effects Slide 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11734,7 +11734,7 @@ var effectSlide = $.effects.effect.slide = function( o, done ) {
 
 
 /*!
- * jQuery UI Effects Transfer 1.11.2
+ * jQuery UI Effects Transfer 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11778,7 +11778,7 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
 
 /*!
- * jQuery UI Progressbar 1.11.2
+ * jQuery UI Progressbar 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11790,7 +11790,7 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
 
 var progressbar = $.widget( "ui.progressbar", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	options: {
 		max: 100,
 		value: 0,
@@ -11923,7 +11923,7 @@ var progressbar = $.widget( "ui.progressbar", {
 
 
 /*!
- * jQuery UI Selectable 1.11.2
+ * jQuery UI Selectable 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -11935,7 +11935,7 @@ var progressbar = $.widget( "ui.progressbar", {
 
 
 var selectable = $.widget("ui.selectable", $.ui.mouse, {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	options: {
 		appendTo: "body",
 		autoRefresh: true,
@@ -12195,7 +12195,7 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 
 
 /*!
- * jQuery UI Selectmenu 1.11.2
+ * jQuery UI Selectmenu 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -12207,13 +12207,13 @@ var selectable = $.widget("ui.selectable", $.ui.mouse, {
 
 
 var selectmenu = $.widget( "ui.selectmenu", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	defaultElement: "<select>",
 	options: {
 		appendTo: null,
 		disabled: null,
 		icons: {
-			button: "ui-icon-triangle-1-s"
+			button: "ui-icon-triangle-1.php-s"
 		},
 		position: {
 			my: "left top",
@@ -12795,7 +12795,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 
 
 /*!
- * jQuery UI Slider 1.11.2
+ * jQuery UI Slider 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -12807,7 +12807,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 
 
 var slider = $.widget( "ui.slider", $.ui.mouse, {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	widgetEventPrefix: "slide",
 
 	options: {
@@ -13479,7 +13479,7 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 
 
 /*!
- * jQuery UI Sortable 1.11.2
+ * jQuery UI Sortable 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -13491,7 +13491,7 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 
 
 var sortable = $.widget("ui.sortable", $.ui.mouse, {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	widgetEventPrefix: "sort",
 	ready: false,
 	options: {
@@ -14271,7 +14271,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 				},
 				update: function(container, p) {
 
-					// 1. If a className is set as 'placeholder option, we don't force sizes - the class is responsible for that
+					// 1.php. If a className is set as 'placeholder option, we don't force sizes - the class is responsible for that
 					// 2. The option 'forcePlaceholderSize can be enabled to force it even if a class name is specified
 					if(className && !o.forcePlaceholderSize) {
 						return;
@@ -14452,7 +14452,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 		var po = this.offsetParent.offset();
 
 		// This is a special case where we need to modify a offset calculated on start, since the following happened:
-		// 1. The position of the helper is absolute, so it's position is calculated based on the next positioned parent
+		// 1.php. The position of the helper is absolute, so it's position is calculated based on the next positioned parent
 		// 2. The actual offset parent is a child of the scroll parent, and the scroll parent isn't the document, which means that
 		//    the scroll is included in the initial calculation of the offset of the parent, and never recalculated upon drag
 		if(this.cssPosition === "absolute" && this.scrollParent[0] !== document && $.contains(this.scrollParent[0], this.offsetParent[0])) {
@@ -14567,7 +14567,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 			scroll = this.cssPosition === "absolute" && !(this.scrollParent[0] !== document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(html|body)/i).test(scroll[0].tagName);
 
 		// This is another very weird special case that only happens for relative elements:
-		// 1. If the css position is relative
+		// 1.php. If the css position is relative
 		// 2. and the scroll parent is the document or similar to the offset parent
 		// we have to refresh the relative offset during the scroll so there are no jumps
 		if(this.cssPosition === "relative" && !(this.scrollParent[0] !== document && this.scrollParent[0] !== this.offsetParent[0])) {
@@ -14630,7 +14630,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 		a ? a[0].appendChild(this.placeholder[0]) : i.item[0].parentNode.insertBefore(this.placeholder[0], (this.direction === "down" ? i.item[0] : i.item[0].nextSibling));
 
 		//Various things done here to improve the performance:
-		// 1. we create a setTimeout, that calls refreshPositions
+		// 1.php. we create a setTimeout, that calls refreshPositions
 		// 2. on the instance, we have a counter variable, that get's higher after every append
 		// 3. on the local scope, we copy the counter variable, and check in the timeout, if it's still the same
 		// 4. this lets only the last addition to the timeout stack through
@@ -14768,7 +14768,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 
 
 /*!
- * jQuery UI Spinner 1.11.2
+ * jQuery UI Spinner 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -14791,14 +14791,14 @@ function spinner_modifier( fn ) {
 }
 
 var spinner = $.widget( "ui.spinner", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	defaultElement: "<input>",
 	widgetEventPrefix: "spin",
 	options: {
 		culture: null,
 		icons: {
-			down: "ui-icon-triangle-1-s",
-			up: "ui-icon-triangle-1-n"
+			down: "ui-icon-triangle-1.php-s",
+			up: "ui-icon-triangle-1.php-n"
 		},
 		incremental: true,
 		max: null,
@@ -15267,7 +15267,7 @@ var spinner = $.widget( "ui.spinner", {
 
 
 /*!
- * jQuery UI Tabs 1.11.2
+ * jQuery UI Tabs 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -15279,7 +15279,7 @@ var spinner = $.widget( "ui.spinner", {
 
 
 var tabs = $.widget( "ui.tabs", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	delay: 300,
 	options: {
 		active: null,
@@ -16079,16 +16079,16 @@ var tabs = $.widget( "ui.tabs", {
 
 		this.xhr = $.ajax( this._ajaxSettings( anchor, event, eventData ) );
 
-		// support: jQuery <1.8
-		// jQuery <1.8 returns false if the request is canceled in beforeSend,
-		// but as of 1.8, $.ajax() always returns a jqXHR object.
+		// support: jQuery <1.php.8
+		// jQuery <1.php.8 returns false if the request is canceled in beforeSend,
+		// but as of 1.php.8, $.ajax() always returns a jqXHR object.
 		if ( this.xhr && this.xhr.statusText !== "canceled" ) {
 			tab.addClass( "ui-tabs-loading" );
 			panel.attr( "aria-busy", "true" );
 
 			this.xhr
 				.success(function( response ) {
-					// support: jQuery <1.8
+					// support: jQuery <1.php.8
 					// http://bugs.jquery.com/ticket/11778
 					setTimeout(function() {
 						panel.html( response );
@@ -16096,7 +16096,7 @@ var tabs = $.widget( "ui.tabs", {
 					}, 1 );
 				})
 				.complete(function( jqXHR, status ) {
-					// support: jQuery <1.8
+					// support: jQuery <1.php.8
 					// http://bugs.jquery.com/ticket/11778
 					setTimeout(function() {
 						if ( status === "abort" ) {
@@ -16133,7 +16133,7 @@ var tabs = $.widget( "ui.tabs", {
 
 
 /*!
- * jQuery UI Tooltip 1.11.2
+ * jQuery UI Tooltip 1.php.11.2
  * http://jqueryui.com
  *
  * Copyright 2014 jQuery Foundation and other contributors
@@ -16145,10 +16145,10 @@ var tabs = $.widget( "ui.tabs", {
 
 
 var tooltip = $.widget( "ui.tooltip", {
-	version: "1.11.2",
+	version: "1.php.11.2",
 	options: {
 		content: function() {
-			// support: IE<9, Opera in jQuery <1.7
+			// support: IE<9, Opera in jQuery <1.php.7
 			// .text() can't accept undefined, so coerce to a string
 			var title = $( this ).attr( "title" ) || "";
 			// Escape title, since we're going from an attribute to raw HTML
